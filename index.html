@@ -98,34 +98,37 @@
           3.) alt="" | Since the text at the end of the snippet, "..>[Button Text]</a><br>", explains what the button is, we use "alt=""" to nullify the icon annoucement from the accessibility tree. 
           This can improve the experience for assistive technology users by hiding what is essentially duplicated
 
+          IMP NOTES:
+            - Added <span> tag around text for hiding where needed
+            - Added icon bar
         -->
    
         <!-- Generic Homepage -->
-        <a class="button button-default" href="https://haiderali.co/" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-homepage.svg" alt="">Website</a><br>
+        <a class="button button-default halved" href="https://haiderali.co/" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-homepage.svg" alt=""><span>Website</</a><br>
         <!-- Generic Email 
         <a class="button button-default" href="#" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-email.svg" alt="">Email Us</a><br>-->
         <!-- Generic Blog -->
-        <a class="button button-default" href="https://blog.haiderali.co/" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-blog.svg" alt="">Blog</a><br>
+        <a class="button button-default halved" href="https://blog.haiderali.co/" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-blog.svg" alt=""><span>Blog</span></a><br>
         <!-- LinkedIn -->
-        <a class="button button-linked" href="https://www.linkedin.com/in/haakmal/" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/linkedin.svg" alt="">LinkedIn</a><br>
+        <a class="button button-linked" href="https://www.linkedin.com/in/haakmal/" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/linkedin.svg" alt=""><span>LinkedIn</span></a><br>
         <!-- Google Scholar -->
-        <a class="button button-google-scholar" href="https://scholar.google.com.au/citations?hl=en&user=cfD3itUAAAAJ" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/google-scholar.svg" alt="">Google Scholar</a><br>
+        <a class="button button-google-scholar" href="https://scholar.google.com.au/citations?hl=en&user=cfD3itUAAAAJ" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/google-scholar.svg" alt=""><span>Google Scholar</span></a><br>
         <!-- Cal.com -->
-        <a class="button button-cal" href="https://cal.com/haakmal" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/cal.svg" alt="">Book a meeting</a><br>
+        <a class="button button-cal" href="https://cal.com/haakmal" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/cal.svg" alt=""><span>Book a meeting</span></a><br>    
+        <!-- Twitter -->
+        <a class="button button-twit" href="https://twitter.com/haideraliakmal" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/twitter.svg" alt=""><span>Twitter</span></a><br>
         <!-- Medium -->
-        <a class="button button-medium" href="https://medium.com/@haiderakmal" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/medium.svg" alt="">Medium</a><br>
+        <a class="button button-medium" href="https://medium.com/@haiderakmal" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/medium.svg" alt=""><span>Medium</span></a><br>
         <!-- GitHub -->
-        <a class="button button-github" href="https://github.com/haideraliakmal" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/github.svg" alt="">GitHub</a><br>
+        <a class="button button-github" href="https://github.com/haideraliakmal" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/github.svg" alt=""><span>GitHub</span></a><br>
         <!-- Instagram -->
-        <a class="button button-instagram" href="https://www.instagram.com/drhaiderakmal/" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/instagram.svg" alt="">Instagram</a><br>
+        <a class="button button-instagram" href="https://www.instagram.com/drhaiderakmal/" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/instagram.svg" alt=""><span>Instagram</span></a><br>
         <!-- Mastodon 
         <a class="button button-mastodon" href="#" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/mastodon.svg" alt="">Mastodon</a><br>-->
         <!-- Figma 
         <a class="button button-figma" href="#" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/figma.svg" alt="">Figma Community</a><br>-->
         <!-- YouTube -->
-        <a class="button button-yt" href="https://www.youtube.com/channel/UCKaeadPIEiWjBZXG0SXFT0A" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/youtube.svg" alt="">YouTube</a><br>    
-        <!-- Twitter -->
-        <a class="button button-twit" href="https://twitter.com/haideraliakmal" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/twitter.svg" alt="">Twitter</a><br>
+        <a class="button button-yt" href="https://www.youtube.com/channel/UCKaeadPIEiWjBZXG0SXFT0A" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/youtube.svg" alt=""><span>YouTube</span></a><br>
         <!-- Read.cv
         <a class="button button-read-cv" href="#" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/read-cv.svg" alt="">Read.cv</a><br> -->
         <!-- Reddit
@@ -404,7 +407,12 @@
             This also includes a link to the LittleLink repository to make forking LittleLink easier.
             You can edit or remove anything here to make your own footer.
         -->
-        <p><a href="privacy.html">Privacy Policy</a> | Build your own by forking <a href="https://littlelink.io" target="_blank" rel="noopener" role="button">LittleLink</a>.</p>
+        <p>
+          <small>
+            <!--<a href="privacy.html">Privacy Policy</a> | -->
+            Build your own by forking <a href="https://littlelink.io" target="_blank" rel="noopener" role="button">LittleLink</a>.
+          </small>
+        </p>
 
       </div>
     </div>
